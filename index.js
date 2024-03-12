@@ -92,6 +92,18 @@ const navbar = (
         </ul>
     </nav>
 );
-ReactDOM.render(navbar, document.getElementById("root3"));
+//ReactDOM.render(navbar, document.getElementById("root3"));
 
+const page2 = (
+    <div>
+        <h1>Some title</h1>
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+        <footer>author: Kristijan</footer>
+    </div>
+);
+//only displays the object page2 in JSON object format, to get actual DOM elements displayed, we need to use ReactDOM.render() method
+//document.getElementById("root3").append(JSON.stringify(page2));
+
+ReactDOM.render(page2, document.getElementById("root3"));
 
