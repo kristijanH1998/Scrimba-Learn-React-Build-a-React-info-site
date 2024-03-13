@@ -1,3 +1,5 @@
+Quiz 1:
+
 1. Why do we need to `import React from "react"` in our files?
 React is what defines JSX
 2. If I were to console.log(page) in index.js, what would show up?
@@ -19,3 +21,35 @@ to tell it HOW to do each step.
 5. What does it mean for something to be "composable"?
 We have small pieces that we can put together to make something
 larger/greater than the individual pieces.
+
+Quiz 2:
+
+1. What is a React component?
+A function that returns React elements. (UI)
+
+2. What's wrong with this code?
+```
+function myComponent() {
+    return (
+        <small>I'm tiny text!</small>
+    )
+}
+```
+Component name must start with uppercase letter like this: "MyComponent()"
+
+3. What's wrong with this code?
+```
+function Header() {
+    return (
+        <header>
+            <nav>
+                <img src="./react-logo.png" width="40px" />
+            </nav>
+        </header>
+    )
+}
+
+ReactDOM.render(Header(), document.getElementById("root"))
+```
+
+For ReactDOM.render() method we don't call the component function as in "Header()" but use this syntax: "<Header />"
